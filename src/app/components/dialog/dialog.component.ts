@@ -17,5 +17,6 @@ export class DialogComponent implements OnInit{
   CloseDialog(){
     this.Ref.close("Seu saldo atual é de 250");
   }
+  
 
 }

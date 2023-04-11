@@ -14,6 +14,7 @@ export class CardComponent{
     exitAnimationDuration:'800ms',
     data:{
       saldo:'R$ 250,00',
+      title:"Saldo atual"
     }
     });
     dialog.afterClosed().subscribe(item =>{
