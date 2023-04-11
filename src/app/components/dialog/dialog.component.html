@@ -1,0 +1,7 @@
+<h1 mat-dialog-title>Saldo atual:</h1>
+<mat-divider></mat-divider>
+  <h2>{{result.saldo}}</h2>
+<div mat-dialog-actions>
+  <!-- <button mat-flat-button color="primary">flat</button> -->
+  <button mat-stroked-button [mat-dialog-close] (click)="CloseDialog()">Fechar</button>
+</div>
