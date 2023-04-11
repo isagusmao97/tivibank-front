@@ -1,14 +1,16 @@
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
   <div class="content">
-    <div fxLayout="row wrap" fxLayoutGap="16px">
-        <div fxFlex="25%"></div>
+    <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="16px">
         <mat-card class="mat-elevation-z4">
             <mat-card-header>
               <mat-card-title>Saldo</mat-card-title>
             </mat-card-header>
             <mat-divider></mat-divider>
             <mat-card-actions>
-              <button mat-stroked-button color="primary" (click)="onClick()">VER SALDO</button>
+              <button mat-stroked-button color="primary" (click)="onClick()"><mat-icon>account_balance</mat-icon>VER SALDO</button>
             </mat-card-actions>
           </mat-card>
       
@@ -18,7 +20,7 @@
             </mat-card-header>
             <mat-divider></mat-divider>
             <mat-card-actions>
-              <button mat-stroked-button color="primary" (click)="onClick()">FAZER DEPÓSITO</button>
+              <button mat-stroked-button color="primary" (click)="onClick()"><mat-icon>savings</mat-icon>FAZER DEPÓSITO</button>
             </mat-card-actions>
           </mat-card>
       
@@ -28,7 +30,7 @@
               </mat-card-header>
               <mat-divider></mat-divider>
               <mat-card-actions>
-                <button mat-stroked-button color="primary" (click)="onClick()">FAZER SAQUE</button>
+                <button mat-stroked-button color="primary" (click)="onClick()"><mat-icon>monetization_on</mat-icon>FAZER SAQUE</button>
               </mat-card-actions>
             </mat-card>
     </div>

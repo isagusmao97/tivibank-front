@@ -10,9 +10,11 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
 import { CardComponent } from './components/card/card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DialogComponent } from './components/dialog/dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { DialogComponent } from './components/dialog/dialog.component';
     MatButtonModule,
     MatDividerModule,
     FlexLayoutModule,
-    MatDialogModule
+    MatDialogModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
