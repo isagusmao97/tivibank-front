@@ -1,6 +1,7 @@
 <h1 mat-dialog-title>{{data.title}}</h1>
 <mat-divider></mat-divider>
   <h2>{{result.saldo}}</h2>
+  <small>Tipo de Operação: {{result.tipo}}</small>
 <div mat-dialog-actions>
   <button mat-flat-button color="primary">Confirmar</button>
   <button mat-stroked-button [mat-dialog-close] (click)="CloseDialog()">Fechar</button>

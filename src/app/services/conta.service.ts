@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Conta } from './conta.model';
 
 
 @Injectable({
@@ -10,6 +11,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ContaService {
 
   apiUrl = 'http://localhost:3000/tivibank-api';
+  
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -19,11 +21,16 @@ export class ContaService {
 
   constructor( private httpClient : HttpClient) { }
 
-  public getConta(){
-    return this.httpClient.get(`${this.apiUrl}/tivibank-api`)
-  }
+  // saldoConta(saldo:Conta): Observable<Conta>{
+  //   return this.http.get<Conta[]>(this.apiUrl);
+  // }
 
-  
+  // saqueConta(saque: Conta): Observable<Conta> {
+  //   return this.http.put<Conta>(this.apiUrl, saque);
+  // }
 
-  
+  // depositoConta(deposito: Conta): Observable<Conta> {
+  //   return this.http.put<Conta>(this.apiUrl, deposito);
+  // }
+
 }

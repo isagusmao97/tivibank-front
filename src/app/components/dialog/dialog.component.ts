@@ -2,6 +2,11 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ContaService } from 'src/app/services/conta.service';
 
+interface DialogData{
+  saldo:string;
+  title:string;
+  tipo:'saldo' | 'deposito' | 'saque'
+}
 
 @Component({
   selector: 'app-dialog',
@@ -9,7 +14,7 @@ import { ContaService } from 'src/app/services/conta.service';
   styleUrls: ['./dialog.component.scss']
 })
 export class DialogComponent implements OnInit{
-  constructor(@Inject(MAT_DIALOG_DATA) public data:any, private Ref:MatDialogRef<DialogComponent> ){}
+  constructor(@Inject(MAT_DIALOG_DATA) public data:DialogData, private Ref:MatDialogRef<DialogComponent> ){}
   result:any;
   ngOnInit(): void{
     this.result = this.data;
