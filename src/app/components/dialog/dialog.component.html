@@ -1,8 +1,11 @@
 <h1 mat-dialog-title>{{data.title}}</h1>
 <mat-divider></mat-divider>
-  <h2>{{result.saldo}}</h2>
-  <small>Tipo de Operação: {{result.tipo}}</small>
-<div mat-dialog-actions>
-  <button mat-flat-button color="primary">Confirmar</button>
-  <button mat-stroked-button [mat-dialog-close] (click)="CloseDialog()">Fechar</button>
+  <h2 *ngIf="result.saldo!=='saldo'">{{result.saldo}}</h2>
+  <mat-form-field *ngIf="data.tipo!=='saldo'" class="conteudo">
+    <mat-label class="texto-interno">Insira um valor para {{data.tipo}}</mat-label>
+    <input matInput type="number" [(ngModel)]="data.input">
+  </mat-form-field>
+<div mat-dialog-actions class="acao">
+  <button mat-flat-button [mat-dialog-close]="data.input" color="primary">Confirmar</button>
+  <button mat-stroked-button (click)="CloseDialog()">Fechar</button>
 </div>

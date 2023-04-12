@@ -10,7 +10,7 @@ import { Conta } from './conta.model';
 })
 export class ContaService {
 
-  apiUrl = 'http://localhost:3000/tivibank-api';
+  apiUrl = 'http://localhost:3000';
   
 
   httpOptions = {
@@ -21,16 +21,20 @@ export class ContaService {
 
   constructor( private httpClient : HttpClient) { }
 
-  // saldoConta(saldo:Conta): Observable<Conta>{
-  //   return this.http.get<Conta[]>(this.apiUrl);
-  // }
+  saldoConta(): Observable<Conta>{
+    const url = this.apiUrl + '/conta/dados';
+    return this.httpClient.get<Conta>(url);
+  }
 
-  // saqueConta(saque: Conta): Observable<Conta> {
-  //   return this.http.put<Conta>(this.apiUrl, saque);
-  // }
+  saqueConta(id:string, quantia:number): Observable<Conta> {
+    const url = this.apiUrl + '/conta/saque/' + id;
+    console.log(quantia)
+    return this.httpClient.put<Conta>(url, {saldo:quantia});
+  }
 
-  // depositoConta(deposito: Conta): Observable<Conta> {
-  //   return this.http.put<Conta>(this.apiUrl, deposito);
-  // }
+  depositoConta(id:string, quantia:number): Observable<Conta> {
+    const url = this.apiUrl + '/conta/deposito/' + id;
+    return this.httpClient.put<Conta>(url, {saldo:quantia});
+  }
 
 }

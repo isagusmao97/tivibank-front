@@ -1,10 +1,10 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { ContaService } from 'src/app/services/conta.service';
-
+ 
 interface DialogData{
-  saldo:string;
+  saldo:number;
   title:string;
+  input:number;
   tipo:'saldo' | 'deposito' | 'saque'
 }
 
@@ -22,6 +22,5 @@ export class DialogComponent implements OnInit{
   CloseDialog(){
     this.Ref.close("Seu saldo atual é de 250");
   }
-  
 
 }

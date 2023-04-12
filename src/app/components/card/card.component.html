@@ -10,7 +10,7 @@
             </mat-card-header>
             <mat-divider></mat-divider>
             <mat-card-actions>
-              <button mat-stroked-button color="primary" (click)="onClick('saldo')"><mat-icon>account_balance</mat-icon>VER SALDO</button>
+              <button mat-stroked-button color="primary" (click)="onClick('saldo', 'Saldo atual')"><mat-icon>account_balance</mat-icon>VER SALDO</button>
             </mat-card-actions>
           </mat-card>
       
@@ -20,7 +20,7 @@
             </mat-card-header>
             <mat-divider></mat-divider>
             <mat-card-actions>
-              <button mat-stroked-button color="primary" (click)="onClick('deposito')"><mat-icon>savings</mat-icon>FAZER DEPÓSITO</button>
+              <button mat-stroked-button color="primary" (click)="onClick('deposito', 'Valor para depósito')"><mat-icon>savings</mat-icon>FAZER DEPÓSITO</button>
             </mat-card-actions>
           </mat-card>
       
@@ -30,7 +30,7 @@
               </mat-card-header>
               <mat-divider></mat-divider>
               <mat-card-actions>
-                <button mat-stroked-button color="primary" (click)="onClick('saque')"><mat-icon>monetization_on</mat-icon>FAZER SAQUE</button>
+                <button mat-stroked-button color="primary" (click)="onClick('saque', 'Valor para saque')"><mat-icon>monetization_on</mat-icon>FAZER SAQUE</button>
               </mat-card-actions>
             </mat-card>
     </div>
