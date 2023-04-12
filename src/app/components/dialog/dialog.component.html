@@ -1,5 +1,6 @@
 <h1 mat-dialog-title>{{data.title}}</h1>
 <mat-divider></mat-divider>
+<h3>Saldo atual:</h3>
   <h2 *ngIf="result.saldo!=='saldo'">{{result.saldo}}</h2>
   <mat-form-field *ngIf="data.tipo!=='saldo'" class="conteudo">
     <mat-label class="texto-interno">Insira um valor para {{data.tipo}}</mat-label>

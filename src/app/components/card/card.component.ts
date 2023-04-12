@@ -22,7 +22,7 @@ export class CardComponent{
        
     const dialog = this._matDialog.open(DialogComponent, {
       width:'20%',
-      height:'300px',
+      height:'320px',
       enterAnimationDuration:'800ms',
       exitAnimationDuration:'800ms',
     data:{
