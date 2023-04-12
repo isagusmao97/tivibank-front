@@ -1,27 +1,14 @@
-# TivibankFront
+# TiviBankFront 
+Parte do Front-end do desafio técnico proposto pela Tivic, onde neste sistema é executado as funções de Saque,
+Depósito e Verificação do Saldo. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+# 📖 Sobre
+O sistema foi construído  utilizando Angular versão 15.2.1, e para construção de componentes foi utilizado a 
+biblioteca Angular Material versão 15.2.6 que utiliza componentes do Material Design próprio pro Angular. 
 
-## Development server
+# 🐞 Como iniciar a aplicação
+Para iniciar a aplicação é preciso rodar o comando ng serve no terminal deve aparecer a url http://localhost:4200/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# 🌱 Processo de Desenvolvimento 
+Sobre o processo de desenvolvimento da aplicação, foi minha primeira vez utilizando o Angular e tudo relacionado a ele. Então vi isso como uma oportunidade de aprender algo novo. 
+A arquitetura utilizada foi a padrão do Angular Cli, no qual incluí no projeto uma pasta services e a criação de componentes card, dialog e footer que estão presentes da pasta components. 
